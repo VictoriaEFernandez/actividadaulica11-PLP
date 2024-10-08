@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi información</title>
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
     <script>
@@ -21,5 +29,37 @@
     <button onclick="notasAlumno()">Notas Alumnos</button><br><br>
     <button onclick="obtenerClavesIguales()">Obtener Claves</button><br><br>
     <button onclick="operacionesEstructura()">Operaciones [Estructuras Compuestas]</button><br><br>
+    <button onclick="CargarEnteros()">Cargar Enteros</button><br><br>
+    <button onclick="mostrarCuatrimestre()">Mostrar Cuatrimestre</button><br><br>
+    <button onclick="valorAcumulado()">Array: Valor Acumulado</button><br><br>
+    <!-- Contenedor para mostrar los resultados -->
+    <div id="resultados"></div>
+    <div class="container">
+        <h1>Selecciona los deportes que practicas</h1>
+        <form id="deportesForm">
+            <label>
+                <input type="checkbox" name="deportes" value="Fútbol"> Fútbol
+            </label><br>
+            <label>
+                <input type="checkbox" name="deportes" value="Básket"> Básket
+            </label><br>
+            <label>
+                <input type="checkbox" name="deportes" value="Tenis"> Tenis
+            </label><br><br>
+            <button type="button" onclick="mostrarDeportes()">Mostrar Deportes Elegidos</button>
+        </form>
+        <div id="resultado" style="margin-top: 20px;"></div>
+    </div>
+    <button onclick="ingresoNumero()">Ingreso Numero Enteros</button><br><br>
+    <button onclick="verificarNavidad()">Verificar Navidad</button><br><br>
+    <button onclick="valoresTeclado()">Valores Teclado</button><br><br>
+    <button onclick="menoresDiez()">Valores Menores 10</button><br><br>
+    <button onclick="coordenadasCuadrante()">Coordenadas Cuadrantes</button><br><br>
+    <button onclick="informeOperario()">Informe Operario</button><br><br>
+    <button onclick="traducirPalabras()">Traducir Palabras</button><br><br>
+    <button onclick="imprimirContadorOnce()">Imprimir de Once en Once</button><br><br>
+    <button onclick=" multiplosOcho()">Imprirmir Multiplos de Ocho</button><br><br>
+
+    <script src="script.js"></script>
 </body>
 </html>
